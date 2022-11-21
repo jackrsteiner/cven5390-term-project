@@ -9,22 +9,52 @@
 * Manages on-the-ground teams, directing their movements.
 
 ### Goals
-* Determine what communities need additional training.
-* Identify staffing and time requirements to assess damage to infrastructure after an event.
-* 
+* Plan trips to public infrastructure to prepare for and respond to emergencies.
+* Understand where emergency response resources are located, or need to be located.
+* Make a compelling case to funders.
 
-
-## Stuart
-<img src="./images/avatar-stuart.png" width="100">
+## Elina
+<img src="./images/avatar-elina.png" width="100">
 
 ### Description
-* US government employee ensuring that emergency management programs operating in the FSM, backed by US federal dollar, are using US tax dollars responsibly.  
-* Extensive knowledge in logistics and monitoring and evaluation, but limited knowledge of the region.
+* Senior public servant working for the FSM's national Department of Environment, Climate Change & Emergency Management.  
+* Extensive knowledge of communities, localities and assets.
+* Access to resources (computers, staff) is limited and may be significantly impacted by a disaster event (no utilities, no power, no computers).
 
 
 ### Goals
-* Determine what communities need additional training.
-* 
+* Must be able to communicate needs of department to federal politicians, junior public servants, and community stakeholders.
+* Access information about Public Infrastructure without reliable internet or energy.
+* Determine the magnitude of impact on communities if infrastructure is damaged.
+
+## Eliza
+<img src="./images/avatar-rachel.png" width="100">
+
+### Description
+* US government employee ensuring that emergency management programs operating in the FSM, backed by US federal dollars, are using US tax payers money responsibly.  
+* Extensive knowledge in logistics, and monitoring and evaluation, but limited knowledge of the region.
+* Prefers to conduct all work "on paper" and believes computers and the internet are too vulnerable to failure in the field.
+
+
+### Goals
+* Quickly assess what localities are most important and most impacted by a proposed activity.
+* Understand the big picture: where are resources going and for what reason.
+
+
+## Hughes
+<img src="./images/avatar-stuart.png" width="100">
+
+### Description
+* US government employee ensuring that emergency management programs operating in the FSM, backed by US federal dollars, are using US tax payers money responsibly.  
+* Extensive knowledge in logistics, and monitoring and evaluation, but limited knowledge of the region.
+* Prefers to conduct all work "on paper" and believes computers and the internet are too vulnerable to failure in the field.
+
+
+### Goals
+* Quickly assess what localities are most important and most impacted by a proposed activity.
+* Understand the big picture: where are resources going and for what reason.
+
+
 
 
 
