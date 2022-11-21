@@ -1,4 +1,6 @@
 # Mapping Public Infrastructure for Emergency Management in the Federated States of Micronesia
+
+## Introduction
 A Term Project for CVEN5390, Interactive Web Mapping, at the University of Colorado Denver completed for Fall 2022.
 
 ## Proposal
