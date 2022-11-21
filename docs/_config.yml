@@ -1,2 +1,8 @@
+# table of contents tips: https://heymichellemac.com/table-of-contents-jekyll
+
 # Build settings
-theme: jekyll-theme-leap-day
+#theme: jekyll-theme-architect
+#theme: jekyll-theme-cayman
+theme: jekyll-theme-slate
+#theme: jekyll-theme-minimal
+#theme: jekyll-theme-leap-day
