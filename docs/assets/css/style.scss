@@ -1,5 +1,7 @@
-@import "{{ site.theme }}";
+---
+---
 
+@import "{{ site.theme }}";
 #markdown-toc{
     width:230px;
     position:fixed;
