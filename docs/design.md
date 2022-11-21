@@ -1,3 +1,6 @@
+* TOC
+{:toc}
+
 # Personas
 
 ## Ryan
@@ -52,11 +55,8 @@
 
 
 # User Stories
-<img src="./images/avatar-ryan.png" width="25">
+<img src="./images/avatar-ryan.png" width="25">I need to identify the PI that are in a specific community so I can send my team there.
 
-* As Ryan, I need to identify the PI that are in a specific community so I can send my team there.
+<img src="./images/avatar-elina.png" width="25">I need to identify the location of different types PI to better understand how critical lifelines may be impacted by a disaster.
 
-<img src="./images/avatar-elina.png" width="25">
-
-* As Elina, I need to identify the location of different types PI to better understand how critical lifelines may be impacted by a disaster.
-* As Elina, I need to quickly access  contact details for all public PI assets, so I know how to find out what's happening in an urgent situation.
+<img src="./images/avatar-elina.png" width="25">I need to quickly access  contact details for all public PI assets, so I know how to find out what's happening in an urgent situation.
