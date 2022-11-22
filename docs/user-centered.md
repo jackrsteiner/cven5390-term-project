@@ -34,10 +34,14 @@
 <img src="./assets/images/avatar-unyong.png" width="100">
 
 ### Description
-* 
+* Director of WHO office in the FSM, where in country activities are largely focused on WASH (Water Sanitation and Hygiene).
+* Limited knowledge of local geography.
+* Manages the funding facility for training programs that partner with small community organizations.
 
 ### Goals
-* 
+* Identify locations to target for community trainings.
+* Identify and connect with key stakeholders and contacts within communities.
+* Determine if communities have access to essential human services related to WASH adequate to offer some redundancy in a disaster event.
 
 
 ## Hughes
