@@ -4,7 +4,7 @@
 # Personas
 
 ## Ryan
-<img src="./images/avatar-ryan.png" width="100">
+<img src="./assets/images/avatar-ryan.png" width="100">
 
 ### Description
 * Works for a UN organization as head of a program targeting disaster risk reduction.
@@ -17,7 +17,7 @@
 * Make a compelling case to funders.
 
 ## Elina
-<img src="./images/avatar-elina.png" width="100">
+<img src="./assets/images/avatar-elina.png" width="100">
 
 ### Description
 * Senior public servant working for the FSM's national Department of Environment, Climate Change & Emergency Management.  
@@ -31,7 +31,7 @@
 * Determine the magnitude of impact on communities if infrastructure is damaged.
 
 ## Unyong
-<img src="./images/avatar-rachel.png" width="100">
+<img src="./assets/images/avatar-rachel.png" width="100">
 
 ### Description
 * 
@@ -41,7 +41,7 @@
 
 
 ## Hughes
-<img src="./images/avatar-stuart.png" width="100">
+<img src="./assets/images/avatar-stuart.png" width="100">
 
 ### Description
 * US government employee ensuring that emergency management programs operating in the FSM, backed by US federal dollars, are using US tax payers money responsibly.  
@@ -55,8 +55,10 @@
 
 
 # User Stories
-<img src="./images/avatar-ryan.png" width="25">I need to identify the PI that are in a specific community so I can send my team there.
+<img src="./assets/images/avatar-ryan.png" width="25">I need to identify the PI that are in a specific community so I can send my team there.
 
-<img src="./images/avatar-elina.png" width="25">I need to identify the location of different types PI to better understand how critical lifelines may be impacted by a disaster.
+<img src="./assets/images/avatar-elina.png" width="25">I need to identify the location of different types PI so I can better understand how critical lifelines may be impacted by a disaster.
 
-<img src="./images/avatar-elina.png" width="25">I need to quickly access  contact details for all public PI assets, so I know how to find out what's happening in an urgent situation.
+<img src="./assets/images/avatar-elina.png" width="25">I need to quickly access  contact details for all public PI assets so I know how to find out what's happening in an urgent situation.
+
+I need to know what resources are available in a specified community, so I can plan for or respond to a disaster.
