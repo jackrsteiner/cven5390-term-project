@@ -669,11 +669,23 @@ var geojsonMarkerRed = {
     fillOpacity: 0.8
 };
 
+function setColor(latlng, col) {
+    return L.circleMarker(latlng, {
+        radius: 8,
+        fillColor: col,
+        color: '#000',
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.8
+    });
+};
+
 L.geoJSON(PI, {
     pointToLayer(feature, latlng) {
         switch(feature.properties["PI type"]) {
             case "Government / Municipal office": return L.circleMarker(latlng, geojsonMarkerOrange);
             case "Medical facility": return L.circleMarker(latlng,geojsonMarkerRed);
+            case "School building": return setColor(latlng,"#ff0000");
         }
         
     }
