@@ -7,6 +7,11 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.control.zoom({ position: 'bottomright'}).addTo(map);
 
+var myIcon = L.divIcon({className: 'my-div-icon'});
+// you can set .my-div-icon styles in CSS
+
+L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
+
 var muni = {
     "type": "FeatureCollection",
     "name": "FSM Muni PI counts",
@@ -646,4 +651,37 @@ var PI = {
     ]
 };
 
-L.geoJSON(PI).addTo(map);
+var geojsonMarkerOrange = {
+    radius: 8,
+    fillColor: "#ff7800",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+};
+
+var geojsonMarkerRed = {
+    radius: 8,
+    fillColor: "#ff0000",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+};
+
+L.geoJSON(PI, {
+    pointToLayer(feature, latlng) {
+        switch(feature.properties["PI type"]) {
+            case "Government / Municipal office": return L.circleMarker(latlng, geojsonMarkerOrange);
+            case "Medical facility": return L.circleMarker(latlng,geojsonMarkerRed);
+        }
+        
+    }
+}).addTo(map);
+
+
+/* L.geoJSON(PI, {
+    pointToLayer(feature, latlng) {
+        return L.circleMarker(latlng, geojsonMarkerOrange);
+    }
+}).addTo(map); */
