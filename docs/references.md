@@ -1,0 +1,6 @@
+* [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
+    * [Mermaid Diagraming](https://mermaid-js.github.io/mermaid/#/)
+* [Emoji as point icon in Leaflet snippet](https://gist.github.com/RikdeBoer/d98325632b8479757f4d32927e73bd01)
+* [Leaflet search](https://opengeo.tech/maps/leaflet-search/)
+* [Select multiple polygons](https://github.com/olanaso/Leaflet-Select-Polygons)
+* [Accessing .geojson data in javascript](https://www.javascripttutorial.net/javascript-fetch-api/)

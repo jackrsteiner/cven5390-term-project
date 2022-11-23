@@ -685,7 +685,7 @@ L.geoJSON(PI, {
         switch(feature.properties["PI type"]) {
             case "Government / Municipal office": return L.circleMarker(latlng, geojsonMarkerOrange);
             case "Medical facility": return L.circleMarker(latlng,geojsonMarkerRed);
-            case "School building": return setColor(latlng,"#ff0000");
+            case "School building": return setColor(latlng,"#0000ff");
         }
         
     }
