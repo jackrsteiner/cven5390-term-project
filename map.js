@@ -7,10 +7,21 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.control.zoom({ position: 'bottomright'}).addTo(map);
 
-var myIcon = L.divIcon({className: 'my-div-icon'});
-// you can set .my-div-icon styles in CSS
+// Start emojicon code
+const size = 50; // needs to correspond to font-size above
+const iconOptions = {
+    iconSize  : [size, size],
+    iconAnchor: [size/2, size + 9], 
+    className : 'mymarker',
+//runner, medium skin tone, Zero-Width-Joiner, female:
+    html: '🏃🏽‍♀' // or: '&#x1f3c3;&#x1f3fd;&#x200d;&#x2640;'
+}
+const markerOptions = {
+    draggable: true,
+    icon: L.divIcon(iconOptions)
+}
 
-L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
+// End emojicon code
 
 async function loadGeojson(f) {
     const response = await fetch('./'+f+'.geojson');
@@ -62,10 +73,3 @@ L.geoJSON(PI, {
         
     }
 }).addTo(map);
-
-
-/* L.geoJSON(PI, {
-    pointToLayer(feature, latlng) {
-        return L.circleMarker(latlng, geojsonMarkerOrange);
-    }
-}).addTo(map); */
