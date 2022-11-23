@@ -13,13 +13,13 @@ var myIcon = L.divIcon({className: 'my-div-icon'});
 L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
 
 async function loadGeojson(f) {
-    const response = await fetch('./'+f);
+    const response = await fetch('./'+f+'.geojson');
     const gjob = await response.json();
     return gjob;
   };
 
-const PI = await loadGeojson('FSM PI.geojson');
-const muni = await loadGeojson('FSM Muni PI counts.geojson');
+const PI = await loadGeojson('FSM PI');
+const muni = await loadGeojson('FSM Muni PI counts');
 
 L.geoJSON(muni).addTo(map);
 
