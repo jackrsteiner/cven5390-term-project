@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1000;
 }
 
 table {
@@ -30,4 +31,15 @@ td {
     height: 25px;
     width: 110px;
     border-radius: 5px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.leaflet-container {
+    height: 400px;
+    width: 600px;
+    max-width: 100%;
+    max-height: 100%;
 }
