@@ -1,0 +1,19 @@
+.legend{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(51, 49, 49);
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    border-radius: 5px;
+}
+
+table{
+    width: 100%;
+    color: white;
+}
+
+td {
+    border-color: white;
+    border-bottom: 1px solid;
+}
