@@ -1,4 +1,4 @@
-.legend{
+.legend {
     height: 200px;
     width: 150px;
     background-color: rgb(51, 49, 49);
@@ -6,9 +6,12 @@
     left: 5px;
     top: 5px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-table{
+table {
     width: 100%;
     color: white;
 }
@@ -16,4 +19,15 @@ table{
 td {
     border-color: white;
     border-bottom: 1px solid;
+}
+
+.clear-button {
+    color: white;
+    background-color: rgb(105, 32, 32);
+    border: 1px solid white;
+    align-content: center;
+    text-align: center;
+    height: 25px;
+    width: 110px;
+    border-radius: 5px;
 }
