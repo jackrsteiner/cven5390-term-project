@@ -7,22 +7,6 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.control.zoom({ position: 'bottomright'}).addTo(map);
 
-// Start emojicon code
-const size = 50; // needs to correspond to font-size above
-const iconOptions = {
-    iconSize  : [size, size],
-    iconAnchor: [size/2, size + 9], 
-    className : 'mymarker',
-//runner, medium skin tone, Zero-Width-Joiner, female:
-    html: '🏃🏽‍♀' // or: '&#x1f3c3;&#x1f3fd;&#x200d;&#x2640;'
-}
-const markerOptions = {
-    draggable: true,
-    icon: L.divIcon(iconOptions)
-}
-
-// End emojicon code
-
 async function loadGeojson(f) {
     const response = await fetch('./'+f+'.geojson');
     const gjob = await response.json();
@@ -63,10 +47,24 @@ function setColor(latlng, col) {
     });
 };
 
+// Start emojicon code
+const size = 15 // needs to correspond to font-size above
+const iconOptions = {
+    iconSize  : [size, size],
+    iconAnchor: [size/2, size + 9], 
+    className : 'mymarker',
+    html: '⚙️'
+}
+const markerOptions = {
+    icon: L.divIcon(iconOptions)
+}
+
+// End emojicon code
+
 L.geoJSON(PI, {
     pointToLayer(feature, latlng) {
         switch(feature.properties["PI type"]) {
-            case "Government / Municipal office": return L.circleMarker(latlng, geojsonMarkerOrange);
+            case "Government / Municipal office": return L.marker(latlng, markerOptions);
             case "Medical facility": return L.circleMarker(latlng,geojsonMarkerRed);
             case "School building": return setColor(latlng,"#0000ff");
         }
