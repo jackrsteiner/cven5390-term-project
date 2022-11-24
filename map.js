@@ -8,7 +8,7 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.control.zoom({ position: 'bottomright'}).addTo(map);
 
 async function loadGeojson(f) {
-    const response = await fetch('./'+f+'.geojson');
+    const response = await fetch('./' + f + '.geojson');
     const gjob = await response.json();
     return gjob;
   };
@@ -16,12 +16,18 @@ async function loadGeojson(f) {
 const PI = await loadGeojson('FSM PI');
 const muni = await loadGeojson('FSM Muni PI counts');
 
-L.geoJSON(muni).addTo(map);
+function onMuniClick(feature, layer) {
+    layer.bindPopup(feature.properties["ADM2_NAME"])
+};
+
+const muniLayer = L.geoJSON(muni, {
+    onEachFeature: onMuniClick
+}).addTo(map);
 
 function setEmojicon(ico='😕', size=15) {
     const iconOptions = {
         iconSize  : [size, size],
-        iconAnchor: [size/2, size + 9], 
+        iconAnchor: [size/2, size/2], 
         className : 'mymarker',
         html: ico
     }
@@ -33,8 +39,7 @@ function setEmojicon(ico='😕', size=15) {
     return markerOptions
 }
 
-
-L.geoJSON(PI, {
+const piLayer = L.geoJSON(PI, {
     pointToLayer(feature, latlng) {
         switch(feature.properties["PI type"]) {
             case "Community hall": return L.marker(latlng, setEmojicon('🫂'));
@@ -47,3 +52,17 @@ L.geoJSON(PI, {
         
     }
 }).addTo(map);
+
+var popup = L.popup();
+
+function onMarkerClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+};
+
+piLayer.on('click', onMarkerClick);
+
+
+
