@@ -58,15 +58,32 @@ const iconOptions = {
 const markerOptions = {
     icon: L.divIcon(iconOptions)
 }
-
 // End emojicon code
+
+function setEmojicon(ico='😕', size=15) {
+    const iconOptions = {
+        iconSize  : [size, size],
+        iconAnchor: [size/2, size + 9], 
+        className : 'mymarker',
+        html: ico
+    }
+
+    const markerOptions = {
+        icon: L.divIcon(iconOptions)
+    }
+    return markerOptions
+}
+
 
 L.geoJSON(PI, {
     pointToLayer(feature, latlng) {
         switch(feature.properties["PI type"]) {
-            case "Government / Municipal office": return L.marker(latlng, markerOptions);
-            case "Medical facility": return L.circleMarker(latlng,geojsonMarkerRed);
-            case "School building": return setColor(latlng,"#0000ff");
+            case "Community hall": return L.marker(latlng, setEmojicon('🫂'));
+            case "Government / Municipal office": return L.marker(latlng, setEmojicon('⚙️'));
+            case "Medical facility": return L.marker(latlng,setEmojicon('🏥'));
+            case "Religious facility (church, etc.)": return L.marker(latlng,setEmojicon('🛐'));
+            case "School building": return L.marker(latlng,setEmojicon('📚'));
+            case "Public utilities (electric, telecom, etc.)": return L.marker(latlng,setEmojicon('💡'));
         }
         
     }
