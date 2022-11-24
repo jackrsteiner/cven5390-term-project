@@ -2,6 +2,7 @@
 * [Leaflet Docs](https://leafletjs.com/reference.html)
     * [Geojson reference](https://leafletjs.com/reference.html#geojson)
     * [Geojson examples](https://leafletjs.com/examples/geojson/)
+    * [All kinds of great examples](https://tomik23.github.io/leaflet-examples/)
 * [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
     * [Mermaid Diagraming](https://mermaid-js.github.io/mermaid/#/)
 * [Avoid CORs on local preview](https://stackoverflow.com/questions/10752055/cross-origin-requests-are-only-supported-for-http-error-when-loading-a-local)

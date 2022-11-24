@@ -16,13 +16,85 @@ async function loadGeojson(f) {
 const PI = await loadGeojson('FSM PI');
 const muni = await loadGeojson('FSM Muni PI counts');
 
-function onMuniClick(feature, layer) {
+/* function onMuniPop(feature, layer) {
     layer.bindPopup(feature.properties["ADM2_NAME"])
 };
 
+const muniLayer1 = L.geoJSON(muni, {
+    onEachFeature: onMuniPop
+}).addTo(map);
+ */
+
+// Initialize dictionary for counting PI in muni
+let piCounts = {
+    "Community":0,
+    "Gov":0,
+    "Med":0,
+    "Religious":0,
+    "Schools":0,
+    "Utilities":0
+};
+
+// Initialize dictionary to track counted polygons
+let munisSelected = [];
+
+
+var nolight = {
+    "fillOpacity": 0,
+    "color": "black"
+}
+
+var highlight = {
+    "fillOpacity": .2,
+    "color": "#3388ff"
+};
+
+// Function increments or decrments piCounts depending on if muni is selected or deselected.
+function onMuniClick(feature, layer) {
+    layer.on({
+        click: function() { 
+            if (munisSelected.includes(feature.properties["ADM2_NAME"])) {
+                munisSelected.splice(munisSelected.indexOf(feature.properties["ADM2_NAME"]),1);
+                for (const key in piCounts) {
+                    piCounts[key] = piCounts[key] - feature.properties[key]
+                };
+                console.log(munisSelected);
+                console.log(piCounts);
+                layer.setStyle(nolight);
+            } else {
+                munisSelected.push(feature.properties["ADM2_NAME"]);
+                for (const key in piCounts) {
+                    piCounts[key] = piCounts[key] + feature.properties[key]
+                };
+                console.log(munisSelected);
+                console.log(piCounts);
+                layer.setStyle(highlight); 
+            }
+        }
+    });
+};
+
 const muniLayer = L.geoJSON(muni, {
+    style: nolight,
     onEachFeature: onMuniClick
 }).addTo(map);
+
+
+
+/* function myStyle(feature) {
+  redOpacity = 0;
+  var opacity = (feature.color == 'red') ? redOpacity : feature.opacity;
+  return {
+    stroke: true,
+    fillColor: feature.color,
+    fillOpacity: opacity,
+    color: feature.color,
+    opacity: opacity,
+    weight: 2,
+  };
+}
+
+muniLayer.setStyle(myStyle); */
 
 function setEmojicon(ico='😕', size=15) {
     const iconOptions = {
