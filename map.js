@@ -77,7 +77,7 @@ function onMuniClick(feature, layer) {
                 console.log(piCounts);
                 layer.setStyle(highlight); 
             };
-            document.getElementById("munis-selected").innerHTML = munisSelected.join(', ');
+            document.getElementById("munis-selected").innerHTML = munisSelected.sort().join(', ');
         }
     });
 };
