@@ -38,7 +38,7 @@ let piCounts = {
 // Initialize dictionary to track counted polygons
 let munisSelected = [];
 
-
+// Styles for muni
 var nolight = {
     "fillOpacity": 0,
     "color": "black"
