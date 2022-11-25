@@ -1,5 +1,5 @@
 .legend {
-    height: 200px;
+    height: auto;
     width: 150px;
     background-color: rgb(51, 49, 49);
     position: absolute;
@@ -20,6 +20,15 @@ table {
 td {
     border-color: white;
     border-bottom: 1px solid;
+}
+
+#munis-selected {
+    color: #3388ff;
+    height: auto;
+}
+
+.button-container {
+    padding: 10px;
 }
 
 .clear-button {

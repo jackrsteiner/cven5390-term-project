@@ -35,6 +35,11 @@ let piCounts = {
     "Utilities":0
 };
 
+// Update legend with piCounts values
+for (const key in piCounts) {
+    document.getElementById(key).innerHTML = piCounts[key];
+};
+
 // Initialize dictionary to track counted polygons
 let munisSelected = [];
 
@@ -56,7 +61,8 @@ function onMuniClick(feature, layer) {
             if (munisSelected.includes(feature.properties["ADM2_NAME"])) {
                 munisSelected.splice(munisSelected.indexOf(feature.properties["ADM2_NAME"]),1);
                 for (const key in piCounts) {
-                    piCounts[key] = piCounts[key] - feature.properties[key]
+                    piCounts[key] = piCounts[key] - feature.properties[key];
+                    document.getElementById(key).innerHTML = piCounts[key];
                 };
                 console.log(munisSelected);
                 console.log(piCounts);
@@ -64,12 +70,14 @@ function onMuniClick(feature, layer) {
             } else {
                 munisSelected.push(feature.properties["ADM2_NAME"]);
                 for (const key in piCounts) {
-                    piCounts[key] = piCounts[key] + feature.properties[key]
+                    piCounts[key] = piCounts[key] + feature.properties[key];
+                    document.getElementById(key).innerHTML = piCounts[key];
                 };
                 console.log(munisSelected);
                 console.log(piCounts);
                 layer.setStyle(highlight); 
-            }
+            };
+            document.getElementById("munis-selected").innerHTML = munisSelected.join(', ');
         }
     });
 };
