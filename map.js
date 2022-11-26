@@ -54,7 +54,7 @@ var highlight = {
     "color": "#3388ff"
 };
 
-// Function increments or decrments piCounts depending on if muni is selected or deselected.
+// increments or decrments piCounts if muni is selected or deselected.
 function onMuniClick(feature, layer) {
     layer.on({
         click: function() { 
@@ -64,8 +64,6 @@ function onMuniClick(feature, layer) {
                     piCounts[key] = piCounts[key] - feature.properties[key];
                     document.getElementById(key).innerHTML = piCounts[key];
                 };
-                console.log(munisSelected);
-                console.log(piCounts);
                 layer.setStyle(nolight);
             } else {
                 munisSelected.push(feature.properties["ADM2_NAME"]);
@@ -73,8 +71,6 @@ function onMuniClick(feature, layer) {
                     piCounts[key] = piCounts[key] + feature.properties[key];
                     document.getElementById(key).innerHTML = piCounts[key];
                 };
-                console.log(munisSelected);
-                console.log(piCounts);
                 layer.setStyle(highlight); 
             };
             document.getElementById("munis-selected").innerHTML = munisSelected.sort().join(', ');
@@ -86,23 +82,6 @@ const muniLayer = L.geoJSON(muni, {
     style: nolight,
     onEachFeature: onMuniClick
 }).addTo(map);
-
-
-
-/* function myStyle(feature) {
-  redOpacity = 0;
-  var opacity = (feature.color == 'red') ? redOpacity : feature.opacity;
-  return {
-    stroke: true,
-    fillColor: feature.color,
-    fillOpacity: opacity,
-    color: feature.color,
-    opacity: opacity,
-    weight: 2,
-  };
-}
-
-muniLayer.setStyle(myStyle); */
 
 function setEmojicon(ico='😕', size=15) {
     const iconOptions = {
