@@ -108,7 +108,6 @@ const piLayer = L.geoJSON(PI, {
             case "School building": return L.marker(latlng,setEmojicon('📚'));
             case "Public utilities (electric, telecom, etc.)": return L.marker(latlng,setEmojicon('💡'));
         }
-        
     }
 }).addTo(map);
 
