@@ -123,5 +123,15 @@ function onMarkerClick(e) {
 
 piLayer.on('click', onMarkerClick);
 
+// Clear selection logic
+document.getElementById("clear-button").addEventListener("click", clearFunction);
+
+function clearFunction() {
+  document.getElementById("clear-button").innerHTML = "Reset";
+  for (item in munisSelected) {
+
+  }
+};
+
 
 
