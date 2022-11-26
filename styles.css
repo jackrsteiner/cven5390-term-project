@@ -25,10 +25,14 @@ td {
 #munis-selected {
     color: #3388ff;
     height: auto;
+    padding: 5px;
 }
 
 .button-container {
     padding: 10px;
+    /* Remove height and width 0 when button works */
+    height: 0;
+    width: 0;
 }
 
 .clear-button {
@@ -37,8 +41,11 @@ td {
     border: 1px solid white;
     align-content: center;
     text-align: center;
+    /*
     height: 25px;
-    width: 110px;
+    width: 110px; 
+    */
+    opacity: 0;
     border-radius: 5px;
     box-shadow: 2px 2px rgb(218, 218, 218);
 }
@@ -69,6 +76,13 @@ html, body {
     font-size: 15px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 .leaflet-popup { 
     margin-bottom: 70px;
+}
+
+.pi-attrs-container{
+    background-color: black;
+    height: 40%;
+    overflow-y:auto;
 }

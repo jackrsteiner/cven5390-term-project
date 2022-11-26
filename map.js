@@ -108,8 +108,16 @@ const piLayer = L.geoJSON(PI, {
             case "School building": return L.marker(latlng,setEmojicon('📚'));
             case "Public utilities (electric, telecom, etc.)": return L.marker(latlng,setEmojicon('💡'));
         }
+    },
+    onEachFeature(feature, layer){
+        layer.on({
+            click: function() {
+                console.log("Hello3", feature)
+            }      
+        })
     }
 }).addTo(map);
+
 
 var popup = L.popup();
 
@@ -121,6 +129,17 @@ function onMarkerClick(e) {
 };
 
 piLayer.on('click', onMarkerClick);
+
+/*
+function onPiClick(layer){
+    console.log("Pi clicked", layer, 'is', typeof(layer),  'something');
+};
+
+piLayer.on('click', onPiClick);
+*/
+
+
+
 
 // Clear selection logic
 document.getElementById("clear-button").addEventListener("click", clearFunction);
