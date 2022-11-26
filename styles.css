@@ -85,4 +85,11 @@ html, body {
     background-color: black;
     height: 40%;
     overflow-y:auto;
+
+}
+
+
+.label {
+    font-weight: 900;
+    border-bottom: 0;
 }
