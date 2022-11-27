@@ -83,6 +83,33 @@ const muniLayer = L.geoJSON(muni, {
     onEachFeature: onMuniClick
 }).addTo(map);
 
+// Clear selection
+document.getElementById("clear-button").addEventListener("click", clearFunction);
+
+function clearFunction() {
+    piCounts = {
+        "Community":0,
+        "Gov":0,
+        "Med":0,
+        "Religious":0,
+        "Schools":0,
+        "Utilities":0
+    };
+
+    munisSelected = [];
+
+    for (const key in piCounts) {
+        document.getElementById(key).innerHTML = piCounts[key];
+    };
+
+    muniLayer.resetStyle();
+
+    document.getElementById("munis-selected").innerHTML = munisSelected.sort().join(', ');
+};
+
+
+
+
 function setEmojicon(ico='😕', size=15) {
     const iconOptions = {
         iconSize  : [size, size],
@@ -124,16 +151,3 @@ const piLayer = L.geoJSON(PI, {
         })
     }
 }).addTo(map);
-
-// Clear selection logic
-document.getElementById("clear-button").addEventListener("click", clearFunction);
-
-function clearFunction() {
-  document.getElementById("clear-button").innerHTML = "Reset";
-  for (item in munisSelected) {
-
-  }
-};
-
-
-
