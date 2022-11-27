@@ -139,7 +139,9 @@ muniLayer.eachLayer(function(layer){
     console.log(layer.feature.properties.ADM2_NAME, piCounts)
 });
 
+*/
 
+/*
 // Count all PI using PI layer
 piLayer.eachLayer(function(layer){
     piCounts[layer.feature.properties["PI type"]] = piCounts[layer.feature.properties["PI type"]] + 1;
