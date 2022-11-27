@@ -94,6 +94,11 @@ html, body {
     border-bottom: 0;
 }
 
+div.pi-table {
+    height: 30%;
+    overflow-y:auto;
+}
+
 table.pi-table {
     font-family: arial, sans-serif;
     border-collapse: collapse;

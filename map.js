@@ -112,7 +112,7 @@ const piLayer = L.geoJSON(PI, {
     onEachFeature(feature, layer){
         layer.on({
             click: function() {
-                console.log("Hello3", feature.properties);
+                // console.log("Hello3", feature.properties);
                 for (const prop in feature.properties) {
                     const elementExists = document.getElementById(prop) !== null;
                     if (elementExists){
