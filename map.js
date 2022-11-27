@@ -125,29 +125,6 @@ const piLayer = L.geoJSON(PI, {
     }
 }).addTo(map);
 
-
-var popup = L.popup();
-
-function onMarkerClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
-};
-
-piLayer.on('click', onMarkerClick);
-
-/*
-function onPiClick(layer){
-    console.log("Pi clicked", layer, 'is', typeof(layer),  'something');
-};
-
-piLayer.on('click', onPiClick);
-*/
-
-
-
-
 // Clear selection logic
 document.getElementById("clear-button").addEventListener("click", clearFunction);
 
