@@ -118,6 +118,7 @@ const piLayer = L.geoJSON(PI, {
                     if (elementExists){
                         document.getElementById(prop).innerHTML = feature.properties[prop];
                     };
+                    document.getElementById("GPS").innerHTML = feature.properties["(GPS) Latitude"].toString().substring(0,5) + ", " + feature.properties["(GPS) Longitude"].toString().substring(0,7)  + " (" + feature.properties["GPS accuracy"] + ")";
                 };
             }     
         })
