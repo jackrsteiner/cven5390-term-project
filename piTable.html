@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Attributes</title>
+
+    <style>
+        table.pi-table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+        
+    
+        th.pi-table {
+            padding: 3px;
+            text-align: center;
+            border: 1px solid black;
+            border-right: 2px solid black;
+            background-color: #dddddd;
+        }
+
+        td.pi-table {
+            padding: 3px;
+            border-right: 2px solid black;
+
+        }
+
+        tr.pi-table:nth-child(even) {
+            font-size: 10px;
+            text-align: left;
+            border-top: 1px solid black;
+        }
+
+        tr.pi-table:nth-child(odd) {
+            text-align: right;
+            border-bottom: 1px solid black;
+        }
+        </style>
+</head>
+<body>
+    <div class="pi-table">
+        <table class="pi-table">
+            <tr class="pi-table">
+                <th class="pi-table">Contact</th>
+                <th class="pi-table">Function</th>
+                <th class="pi-table">Location</th>
+                <th class="pi-table">Admin</th>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table">PI Name:</td>
+                <td class="pi-table">In Use:</td>
+                <td class="pi-table">GPS (accuracy):</td>
+                <td class="pi-table">PI Code:</td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table" id="PI name">Some School</td>
+                <td class="pi-table" id="If PI is in use">Fullby</td>
+                <td class="pi-table" id="GPS">200.1, 69.93 (5)</td>
+                <td class="pi-table" id="PI code">TKK-003</td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table">Type:</td>
+                <td class="pi-table">Past Shelter:</td>
+                <td class="pi-table">Community:</td>
+                <td class="pi-table">Source:</td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table" id="PI type">Municipal/Government</td>
+                <td class="pi-table" id="PI used as EC">False</td>
+                <td class="pi-table" id="Village/Community">Mwaaahn</td>
+                <td class="pi-table" id="PI identification source">WHO</td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table">Contact:</td>
+                <td class="pi-table">Future Shelter:</td>
+                <td class="pi-table">Municipality:</td>
+                <td class="pi-table">Assessment:</td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table" id="Key informant name">Faustino</td>
+                <td class="pi-table" id="Is PI site recommended as future EC if needed?">YESH</td>
+                <td class="pi-table" id="Municipality">Wweeeno</td>
+                <td class="pi-table" id="Date of assessment">12/01/36</td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table">Contact Phone:</td>
+                <td class="pi-table">Potable Water:</td>
+                <td class="pi-table">Region:</td>
+                <td class="pi-table">Form ID:</td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table" id="Key informant contact #">930-4931</td>
+                <td class="pi-table" id="Potable water accessibility">YESH</td>
+                <td class="pi-table" id="Region/Island">N. NoMEnomes</td>
+                <td class="pi-table" id ="Form ID">920</td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table">Focal Point:</td>
+                <td class="pi-table">Electricity:</td>
+                <td class="pi-table">State:</td>
+                <td class="pi-table"></td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table" id="PI focal point name">Galileo</td>
+                <td class="pi-table" id="Electric power availability">YESH</td>
+                <td class="pi-table" id="State">NSW</td>
+                <td class="pi-table"></td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table">Focal Phone:</td>
+                <td class="pi-table">Toilets:</td>
+                <td class="pi-table"></td>
+                <td class="pi-table"></td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table" id="PI focal point contact #">987-1234</td>
+                <td class="pi-table" id="Number of functioning toilets on site">99</td>
+                <td class="pi-table"></td>
+                <td class="pi-table"></td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table"></td>
+                <td class="pi-table">Disabled Access:</td>
+                <td class="pi-table"></td>
+                <td class="pi-table"></td>
+            </tr>
+            <tr class="pi-table">
+                <td class="pi-table"></td>
+                <td class="pi-table" id="Number of functioning toilets on site">YESH</td>
+                <td class="pi-table"></td>
+                <td class="pi-table"></td>
+            </tr>
+        </table>
+        <div style="border:2px solid black">
+            Comments:
+            <div id="Comments / Observations">This place is so great.</div>
+        </div>
+
+    </div>
+</body>
+</html>
