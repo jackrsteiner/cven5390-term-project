@@ -16,28 +16,14 @@ async function loadGeojson(f) {
 const PI = await loadGeojson('FSM PI');
 const muni = await loadGeojson('FSM Muni PI counts');
 
-/* function onMuniPop(feature, layer) {
-    layer.bindPopup(feature.properties["ADM2_NAME"])
-};
-
-const muniLayer1 = L.geoJSON(muni, {
-    onEachFeature: onMuniPop
-}).addTo(map);
- */
-
 // Initialize dictionary for counting PI in muni
 let piCounts = {
-    "Community":0,
-    "Gov":0,
-    "Med":0,
-    "Religious":0,
-    "Schools":0,
-    "Utilities":0
-};
-
-// Update legend with piCounts values
-for (const key in piCounts) {
-    document.getElementById(key).innerHTML = piCounts[key];
+    "Community hall": 0,
+    "Government / Municipal office": 0,
+    "Medical facility": 0,
+    "Religious facility (church, etc.)": 0,
+    "School building": 0,
+    "Public utilities (electric, telecom, etc.)": 0
 };
 
 // Initialize dictionary to track counted polygons
@@ -87,28 +73,16 @@ const muniLayer = L.geoJSON(muni, {
 document.getElementById("clear-button").addEventListener("click", clearFunction);
 
 function clearFunction() {
-    piCounts = {
-        "Community":0,
-        "Gov":0,
-        "Med":0,
-        "Religious":0,
-        "Schools":0,
-        "Utilities":0
-    };
-
-    munisSelected = [];
 
     for (const key in piCounts) {
+        piCounts[key] = 0;
         document.getElementById(key).innerHTML = piCounts[key];
     };
 
     muniLayer.resetStyle();
-
+    munisSelected = [];
     document.getElementById("munis-selected").innerHTML = munisSelected.sort().join(', ');
 };
-
-
-
 
 function setEmojicon(ico='😕', size=15) {
     const iconOptions = {
@@ -151,3 +125,24 @@ const piLayer = L.geoJSON(PI, {
         })
     }
 }).addTo(map);
+
+
+
+// Count all PI
+//  This only sort of works. It only counts PI that are in munis,
+//  but is missing PI that don't join with munis.
+/*
+muniLayer.eachLayer(function(layer){
+    for (const key in piCounts) {
+        piCounts[key] = piCounts[key] + layer.feature.properties[key];
+    };
+    console.log(layer.feature.properties.ADM2_NAME, piCounts)
+});
+
+
+// Count all PI using PI layer
+piLayer.eachLayer(function(layer){
+    piCounts[layer.feature.properties["PI type"]] = piCounts[layer.feature.properties["PI type"]] + 1;
+    console.log(piCounts);
+});
+*/
