@@ -126,6 +126,19 @@ const piLayer = L.geoJSON(PI, {
     }
 }).addTo(map);
 
+// Add search
+map.addControl( new L.Control.Search({
+    url: 'https://nominatim.openstreetmap.org/search?format=json&q={s}',
+    jsonpParam: 'json_callback',
+    propertyName: 'display_name',
+    propertyLoc: ['lat','lon'],
+    marker: L.circleMarker([0,0],{radius:20, color:'green', weight:4}),
+    autoCollapse: true,
+    autoType: false,
+    minLength: 2,
+    position: "topright"
+}));
+
 
 
 // Count all PI

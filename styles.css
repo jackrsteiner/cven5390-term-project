@@ -121,3 +121,11 @@ tr.pi-table:nth-child(odd) {
     text-align: right;
     border-bottom: 1px solid black;
 }
+
+.search-input {
+	font-family:Courier
+}
+.search-input,
+.leaflet-control-search {
+	max-width:400px;
+}
