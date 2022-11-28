@@ -139,8 +139,6 @@ map.addControl( new L.Control.Search({
     position: "topright"
 }));
 
-
-
 // Count all PI
 //  This only sort of works. It only counts PI that are in munis,
 //  but is missing PI that don't join with munis.
