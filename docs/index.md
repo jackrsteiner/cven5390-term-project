@@ -1,8 +1,12 @@
 # Mapping Public Infrastructure for Emergency Management in the Federated States of Micronesia
 A term project for CVEN5390 completed by Jac Steiner in December 2022
 
+---
+
 ## Proposal
 Completed in consultation with a client and class. [link](./proposal.md)
+
+---
 
 ## Design
 
@@ -18,6 +22,8 @@ Using sticky notes to plan the display for table of properties.
 ![Table Mock-up](./assets/images/Mock-up%20PI%20Table%2020221126_195503.jpg)
 
 ![Properties planning](./assets/images/Mock-up%20PI%20table%2020221126_193954.jpg)
+
+---
 
 ## Development
 ### Tracking Tasks
@@ -50,6 +56,8 @@ In chronological order
 * Clear selection button is unhidden and setup. Default values for total counts of PI in entire country are added.
 ![](./assets/images/Dev%20search%202022-11-28%2012-10-10.png)
 
+---
+
 ## Some references
 * Leaflet
     * [Leaflet Docs](https://leafletjs.com/reference.html)
@@ -69,5 +77,7 @@ In chronological order
 
 
 
+<!-- Comment -->
+---
 * TOC
 {:toc}
