@@ -3,7 +3,7 @@ A term project for CVEN5390 completed by Jac Steiner in December 2022
 
 ![](./assets/images/Product%202022-11-28%2014-07-23.png)
 
-Working [demo](./map.html).
+## [Link to demo](./map.html)
 
 ---
 
