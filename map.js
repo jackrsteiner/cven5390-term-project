@@ -2,7 +2,7 @@ const map = L.map('map', { zoomControl: false }).setView([6.91467, 158.16008], 1
 
 const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: '<a href="https://jackrsteiner.github.io/cven5390-term-project/">More info about this map</a> | &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
 L.control.zoom({ position: 'bottomright'}).addTo(map);
