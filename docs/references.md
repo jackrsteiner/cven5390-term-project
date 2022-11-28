@@ -1,7 +1,8 @@
-## Useful link
-* [Leaflet Docs](https://leafletjs.com/reference.html)
-    * [Geojson reference](https://leafletjs.com/reference.html#geojson)
-    * [Geojson examples](https://leafletjs.com/examples/geojson/)
+## Some references
+* Leaflet
+    * [Leaflet Docs](https://leafletjs.com/reference.html)
+        * [Geojson reference](https://leafletjs.com/reference.html#geojson)
+        * [Geojson examples](https://leafletjs.com/examples/geojson/)
     * [All kinds of great examples](https://tomik23.github.io/leaflet-examples/)
 * [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
     * [Mermaid Diagraming](https://mermaid-js.github.io/mermaid/#/)
@@ -14,4 +15,4 @@
 * [Accessing .geojson data in javascript](https://www.javascripttutorial.net/javascript-fetch-api/) aka the fetch api
     * [Applied example](https://dmitripavlutin.com/fetch-with-json/)
 
-## Useful snippets
+

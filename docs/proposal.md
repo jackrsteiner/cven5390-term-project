@@ -1,6 +1,7 @@
 # CVEN5390 Term Project Pitch
-Fall 2022
-Jac Steiner
+Term: Fall 2022
+
+Produced by Jac Steiner
 
 ## Purpose
 This webmap will visualize the location of public infrastructure (PI) assets in the Federated States of Micronesia. It’s a simple concept that will offer some of the more basic features that you find in FEMA’s Resilience Analysis and Planning Tool (RAPT, https://www.fema.gov/emergency-managers/practitioners/resilience-analysis-and-planning-tool). The map will help identify the location of PI assets in the FSM and summarize what assets are located within subset areas of the FSM. These PI were surveyed over several years and multiple assets’ specific attributes were collected including their location.
