@@ -1,6 +1,3 @@
-* TOC
-{:toc}
-
 # Personas
 
 ## Ryan
@@ -112,3 +109,6 @@ I need to know how to reach a key contact at the PI, so I can coordinate with th
 <img src="./assets/images/avatar-hughes.png" width="25">
 <img src="./assets/images/avatar-unyong.png" width="25">
 I need to know where different PI are located, so we can preposition relevant EM response materials in key locations.
+
+* TOC
+{:toc}

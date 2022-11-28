@@ -26,3 +26,6 @@ The primary data set (PI point data and attributes) is technically not published
 explore Mapbox, as I think the tooling fits the problem space, but I’m going to also consider using Leaflet as an alternative, so the data can remain off of Mapbox servers. My main interest in sticking with Mapbox is that, as
 far as I can tell, styling tiles is a Mapbox integrated tool, whereas Leaflet does not provide support for tile styling. Instead with Leaflet, you can create a custom tileset (not trivial) or choose a style that is satisfactory
 from several already wired up providers (much simpler).
+
+* TOC
+{:toc}
