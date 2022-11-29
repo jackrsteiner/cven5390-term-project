@@ -4,7 +4,7 @@ A term project for CVEN5390 completed by Jac Steiner in December 2022
 ![](./assets/images/Product%202022-11-28%2014-07-23.png)
 
 ## [Link to demo](./map.html)
-readme test
+
 ---
 
 ## Proposal
@@ -78,3 +78,10 @@ In chronological order
 * [Select multiple polygons](https://github.com/olanaso/Leaflet-Select-Polygons)
 * [Accessing .geojson data in javascript](https://www.javascripttutorial.net/javascript-fetch-api/) aka the fetch api
     * [Applied example](https://dmitripavlutin.com/fetch-with-json/)
+
+
+
+<!-- Comment -->
+---
+* TOC
+{:toc}
