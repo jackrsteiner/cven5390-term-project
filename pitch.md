@@ -17,6 +17,7 @@ Emergency managers in the Federated State of Micronesia can use this map to help
 * Public Infrastructure asset point data is from work performed by the International Organization for Migration in Micronesia (IOM) on behalf of the Micronesian Department of Environment, Climate Change and Emergency Management (DECEM) with funding from USAID. The data was made available as an excel spreadsheet of values. This was exported as a CSV, imported into a GIS and exported to GeoJSON.
 * FSM municipality polygon data is available through [The Humanitarian Data Exchange](https://data.humdata.org/) as a shapefile. It can be downloaded at https://data.humdata.org/m/dataset/cod-ab-fsm . The data was produced on behalf of the FSM Division of Statistics for the 2010 census and contributed to HDX by the UN Office for the Coordination of Humanitarian Affairs (OCHA). The shapefile was imported into a GIS. While in the GIS, the PI data was joined to the municipality data to produce 6 count attributes for each PI type in every municipality.
 
+---
 
 * TOC
 {:toc}
