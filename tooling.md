@@ -38,4 +38,4 @@ I used git locally for version control and pushed commits to a Github repository
 ---
 
 * Seed list
-{:toi}
+{:toc}

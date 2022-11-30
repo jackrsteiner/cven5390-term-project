@@ -24,4 +24,4 @@ For the municipality layer, I chose to only display a solid black border as the 
 Rather than include on map labels for place names, both municipality and PI names are never displayed *on map*. This is to keep the map uncluttered. Instead, place names appear in their respective dashboard/displays. So, selected municipalities are listed in the legend, and when a PI is clicked, it's attributes, including name, are populated in the table at the bottom.
 
 * Seed list
-{:toi}
+{:toc}

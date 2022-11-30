@@ -9,4 +9,4 @@ I used a Kanban style board on Trello for task management. The "Epics" column on
 
 
 * Seed list
-{:toi}
+{:toc}

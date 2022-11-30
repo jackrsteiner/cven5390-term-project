@@ -15,4 +15,4 @@ Using sticky notes to plan the display for table of properties.
 ![Properties planning](./assets/images/Mock-up%20PI%20table%2020221126_193954.jpg)
 
 * Seed list
-{:toi}
+{:toc}

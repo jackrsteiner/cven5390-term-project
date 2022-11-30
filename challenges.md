@@ -24,4 +24,4 @@ The consequence of these two caveats is that *some PI are not included in any mu
 Alternatively I could have used the PI **Municipality** attribute to identify which PI belonged to which municipality and aggregate from there. Unfortunately there is some inconsistency in the FSM for place name spellings. I decided that the best option was for the aggregate value to represent the PI contained by the polygon *as drawn*. This allows the map to speak for itself; hopefully its obvious what points are excluded from counts and the root cause of that exclusion.
 
 * Seed list
-{:toi}
+{:toc}
