@@ -8,11 +8,6 @@ A term project for CVEN5390 completed by Jac Steiner in December 2022
 
 ---
 
-## Proposal
-Completed in consultation with a client and the class. Available [here](./proposal.md).
-
----
-
 ## Part 1: Design and Process
 
 ### [User-centered](./user-centered.md)
@@ -24,17 +19,23 @@ Completed in consultation with a client and the class. Available [here](./propos
 ---
 
 ## Part 2: Coding
-### [Working in VS Code](./coding.md)
+### [Tooling](./tooling.md)
 
-### [Coding references](./references.md)
+### [Architecture](./architecture.md)
 
 ---
 
 ## Part 3: Data Story
+### [Revised Pitch](pitch.md)
 
+### [Coding Journey](journey.md)
+
+### [Challenges](challenges.md)
 
 ---
 
 ## Part 4: Demo
 
 
+* Seed list
+{:toi}
