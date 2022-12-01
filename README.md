@@ -37,9 +37,6 @@ A term project for CVEN5390 completed by Jac Steiner in December 2022
 
 ## Part 4: Demo
 
-<p>
-    <video src="https://user-images.githubusercontent.com/6356075/204684404-8c1551fa-bfdb-4017-b62d-025a7affb819.mp4" controls="controls" class="d-block rounded-bottom-2 width-fit" style="max-width:600px;">
-    </video>
-</p>
+{% include video.html address="https://user-images.githubusercontent.com/6356075/204684404-8c1551fa-bfdb-4017-b62d-025a7affb819.mp4"}
 
 [Link to video](https://user-images.githubusercontent.com/6356075/204684404-8c1551fa-bfdb-4017-b62d-025a7affb819.mp4)
