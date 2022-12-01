@@ -6,3 +6,6 @@
 theme: jekyll-theme-slate
 #theme: jekyll-theme-minimal
 #theme: jekyll-theme-leap-day
+
+kramdown:
+  parse_block_html: true
