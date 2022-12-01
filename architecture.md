@@ -48,7 +48,3 @@ Information from these links was very helpful.
 * [Select multiple polygons](https://github.com/olanaso/Leaflet-Select-Polygons)
 * [Accessing .geojson data in javascript](https://www.javascripttutorial.net/javascript-fetch-api/) aka the fetch api
     * [Applied example](https://dmitripavlutin.com/fetch-with-json/)
-
-
-* Seed list
-{:toc}
